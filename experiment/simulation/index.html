@@ -1,13 +1,276 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virtual Labs</title>
+
+<!-- BEGIN BASE CSS STYLE -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"type="text/css">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="iitstyle.css" rel="stylesheet" type="text/css">
+    
+
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="jquerymin.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/afa6483c49.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script>
+
+        var simsubscreennum=0;
+
+        var temp=0;
+
+    </script>
+
+</head>
+
+<body style="margin:0; font-family: verdana;" >
+
+<table align="center">
+<tr><td>
+
+    <div id="simscreen">
+
+        <div id="title"><h3>Transverse Vibration Waves in 1D string</h3></div>
+
+
+
+         <!-- Scene 1 -->
+
+
+
+        <div class="simsubscreen" id="canvas1" ></br>
+
+            <strong class="incanvas">STEP</strong>
+
+            <span class="circlebg">&nbsp;1&nbsp;</span>
+
+            <p class="incanvas" style="font-size:15px;"><strong>Objective:</strong></p>
+
+            <p class="incanvas" style="font-size:14px;">To Determine the Vibration of Plates with Variable Thickness and Bounded Conditions.</p></br>
+
+            <p class="incanvas" style="font-size:15px;"><strong>Apparatus used:</strong></p>
+
+            <p class="incanvas" style="font-size:14px;">Hammer, Wire</p></br>
+
+
+            <img src="images/table.png" style="position: absolute; top: 400px; left: 20px; height: 150px; width: 500px;">
+            <img src="images/wirered.png" style="position: absolute; top: 360px; left: 70px; height: 6px; width: 395px;">
+            <img src="images/pin.png" style="position: absolute; top: 345px; left: 50px; height: 100px;">
+			<img src="images/pin.png" style="position: absolute; top: 345px; left: 445px; height: 100px;">
+			<img src="images/hammer.png" style="position: absolute; left: 5px; top: 290px; height: 130px; transform-origin: center bottom; transform: rotate(90deg); visibility: visible;">
+
+			<img src="images/man.png" style="position:absolute; left: 585px; top: 130px; height: 405px;" title="Man" />
+
+            <p class="incanvas" style="font-size:18px; text-align: center; position:absolute; left: 75px; top: 220px;"><strong>Speciman Type : Wire</strong></p>
+
+            <input type="button" id="nextButton1" style="position:absolute; left: 495px; top: 420px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; color: #FFF; padding-bottom: 5px" value="&nbsp;Start Here&nbsp;" onclick="navNext1()"/>
+
+        </div>
+<!----------------------
+            <img style="position:absolute; left:730px; top:480px; cursor:pointer;" id="nextButton1" onClick="navNext1()" src="Next.png" />
+---------------------->
+        
+
+
+        <!-- Step 2 -->
+
+
+        <div class="simsubscreen" id="canvas2" style="visibility:hidden;"></br>
+
+            <strong class="incanvas" style="position: absolute; left: 0px; top: 30px;">STEP</strong>
+
+            <span class="circlebg" style="position: absolute; left: 60px; top: 35px;">&nbsp;2&nbsp;</span>
+
+            <span style="position: absolute; left: 105px; top: 40px; visibility: ;" id="s1a">Select Following Parameters</span>
+            <span style="position: absolute; left: 105px; top: 40px; visibility: hidden;" id="s1b">Click on Hammer to hit on the wire</span>
+			<span style="position: absolute; left: 20px; top: 90px;"><strong>Case</strong></span>
+
+            <span style="position: absolute; left: 20px; top: 130px;"><strong>Length</strong></span>
+
+			<span style="position: absolute; left: 20px; top: 170px;"><strong>Diameter</strong></span>
+			
+            <span style="position: absolute; left: 20px; top: 210px;"><strong>Time</strong></span>
+
+            <select id="x1" style="position: absolute; left: 185px; top: 88px; width: 150px; padding-top: 2px; padding-bottom: 2px;">
+                
+                <option value="">--Select--</option>
+				<option value="bwor">Brick Wall on Right</option>
+				<option value="lslhsr">Light String on Left Heavy String on Right</option>
+				<option value="uc">Uniform Case</option>
+				<option value="hsllsr">Heavy String on Left Light String on Right</option>
+				<option value="zmsr">Zero Mass String on Right</option>
+
+            </select>
+
+			<select id="x2" style="position: absolute; left: 185px; top: 128px; width: 150px; padding-top: 2px; padding-bottom: 2px;">
+                
+                <option value="">--Select--</option>
+
+                <option>5 Cm</option>
+
+            </select>
+
+            <select id="x3" style="position: absolute; left: 185px; top: 168px; width: 150px; padding-top: 2px; padding-bottom: 2px;">
+                
+                <option value="">--Select--</option>
+
+                <option>0.1 mm</option>
+
+                <option>0.2 mm</option>
+
+            </select>
+            
+			<select id="x4" style="position: absolute; left: 185px; top: 208px; width: 150px; padding-top: 2px; padding-bottom: 2px;">
+                
+                <option value="">--Select--</option>
+
+                <option value="1/2">1/2 Sec.</option>
+
+                <option value="1">1 Sec.</option>
+
+                <option value="2">2 Sec.</option>
+
+            </select>
+
+            <span id="fillBox" style="position: absolute; left: 185px; top: 250px; color: red;"></span>
+
+            <input class="incanvas" id="show1" type="button" name="Submit" value="Submit" style="position: absolute; left: 15px; top: 235px; width: 65px;padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="showhammer()"/>
+
+			<input class="incanvas" id="" type="button" name="Reset" value="Reset" style="position: absolute; left: 100px; top: 235px; width: 65px;padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="reset()"/>
+
+			<img src="images/table.png" id="ttop" style="position: absolute; top: 400px; left: 20px; height: 150px; width: 500px; visibility: hidden;">
+<!-- Case 1 -->
+			<img src="images/Wavebg2.gif" id="gif1" style="position: absolute; top: 330px; left: 70px; height: 70px; width: 398px; visibility: hidden;" >
+<!-- Case 2 -->			
+			<img src="images/wave2bg.gif" id="gif2" style="position: absolute; top: 320px; left: 70px; height: 70px; width: 398px; visibility: hidden;" >
+<!-- Case 3 -->
+			<img src="images/wavebg3.gif" id="gif3" style="position: absolute; top: 330px; left: 70px; height: 70px; width: 398px; visibility: hidden;" >
+<!-- Case 4 -->
+			<img src="images/wavebg4.gif" id="gif4" style="position: absolute; top: 308px; left: 70px; height: 70px; width: 398px; visibility: hidden;" >
+<!-- Case 5 -->
+			<img src="images/wavebg5.gif" id="gif5" style="position: absolute; top: 330px; left: 70px; height: 70px; width: 398px; visibility: hidden;" >
+
+<!-- Case 1 -->
+			<img src="images/wirered.png" id="wiregif1" style="position: absolute; top: 360px; left: 70px; height: 6px; width: 395px; visibility: hidden;">
+<!-- Case 2 -->
+			<img src="images/wire90.png" id="wirerotate1" style="position: absolute; top: 355px; left: 186px; height: 4px; width: 250px; transform: rotate(90deg); visibility: hidden;">
+
+			<img src="images/wire2.png" id="wiregif2" style="position: absolute; top: 356px; left: 70px; height: 15px; width: 395px; visibility: hidden;">
+<!-- Case 3 -->
+			<img src="images/wirered.png" id="wiregif3" style="position: absolute; top: 363px; left: 70px; height: 4px; width: 395px; visibility: hidden;">
+<!-- Case 4 -->
+			<img src="images/wire90.png" id="wirerotate2" style="position: absolute; top: 355px; left: 80px; height: 4px; width: 250px; transform: rotate(90deg); visibility: hidden;">
+
+			<img src="images/wire3.png" id="wiregif4" style="position: absolute; top: 356px; left: 70px; height: 15px; width: 395px; visibility: hidden;">
+<!-- Case 5 -->
+			<img src="images/wire90.png" id="wirerotate3" style="position: absolute; top: 355px; left: 186px; height: 4px; width: 250px; transform: rotate(90deg); visibility: hidden;">
+
+			<img src="images/wirered.png" id="wiregif5" style="position: absolute; top: 360px; left: 70px; height: 6px; width: 395px; visibility: hidden;">
+
+<!-- pin and wall -->
+			<img src="images/pin.png" id="pinside1" style="position: absolute; top: 345px; left: 50px; height: 100px; visibility: hidden;">
+
+			<img src="images/pin.png" id="pinside2" style="position: absolute; top: 345px; left: 445px; height: 100px; visibility: hidden;">
+
+			<img src="images/wall.png" id="wallside1" style="position: absolute; top: 320px; left: 445px; height: 120px; visibility: hidden;">
+<!-- Case 1 -->
+			<img src="images/graph/bhc.jpg" id="graph1_1" style="position: absolute; top: 45px; left: 510px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+			<img src="images/graph/bhr.jpg" id="graph1_2" style="position: absolute; top: 300px; left: 510px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+<!-- Case 2 -->
+			<img src="images/graph/dummy.jpg" id="graph2_1" style="position: absolute; top: 45px; left: 510px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+			<img src="images/graph/dummy.jpg" id="graph2_2" style="position: absolute; top: 300px; left: 510px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+<!-- Case 3 -->
+			<img src="images/graph/bhc1.jpg" id="graph3_1" style="position: absolute; top: 45px; left: 510px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+			<img src="images/graph/bhc1.jpg" id="graph3_2" style="position: absolute; top: 300px; left: 510px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+<!-- Case 4 -->
+			<img src="images/graph/dummy.jpg" id="graph4_1" style="position: absolute; top: 45px; left: 510px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+			<img src="images/graph/dummy.jpg" id="graph4_2" style="position: absolute; top: 300px; left: 510px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+<!-- Case 5 -->
+			<img src="images/graph/bhc2.jpg" id="graph5_1" style="position: absolute; top: 45px; left: 510px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+			<img src="images/graph/bhr2.jpg" id="graph5_2" style="position: absolute; top: 300px; left: 510px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+			<img src="images/mode02.gif" id="graph2" style="position: absolute; top: 45px; left: 360px; height: 215px; border: 2px dashed #000; visibility: hidden;">
+
+			
+            
+            
+
+			<!-- <img src="images/platesurface.png" id="platetop1"  style="position: absolute; top: 295px; left: 155px; height: 220px; visibility: hidden;"> -->
+
+			<img src="images/hammer.png" id="hammer1"  style="position: absolute; left: 5px; top: 290px; height: 130px; transform-origin: center bottom; transform: rotate(90deg); visibility: visible; visibility: hidden;">
+			
+            <span class="blink_me" id="hammerarrow1" style="position:absolute; font-size: 35px; left: 100px; top: 415px; visibility: hidden;"><strong><i class="fa fa-arrow-up"></i></strong></span>
+
+			<img src="images/transbox.png" id="cond1"  style="position: absolute; left: 30px; top: 390px; width: 135px; height: 65px; visibility: hidden;" onclick="showgraph1()">
+			<img src="images/transbox.png" id="cond2"  style="position: absolute; left: 30px; top: 390px; width: 135px; height: 65px; visibility: hidden;" onclick="showgraph2()">
+			<img src="images/transbox.png" id="cond3"  style="position: absolute; left: 30px; top: 390px; width: 135px; height: 65px; visibility: hidden;" onclick="showgraph3()">
+			<img src="images/transbox.png" id="cond4"  style="position: absolute; left: 30px; top: 390px; width: 135px; height: 65px; visibility: hidden;" onclick="showgraph4()">
+			<img src="images/transbox.png" id="cond5"  style="position: absolute; left: 30px; top: 390px; width: 135px; height: 65px; visibility: hidden;" onclick="showgraph5()">
+
+            <!--Blinking arrowcubox  -->
+            <span class="blink_me" id="arrowcubox" style="position:absolute; font-size: 40px; left:735px; top:440px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+            <img src="images/Next.png" style="position:absolute; left:730px; top:480px; cursor:pointer; visibility: hidden;" id="nextButton2" onClick="navNext2()"  />
+
+        </div>
+
+ 
+
+        <!-- Step 3 -->
+
+
+
+        <div class="simsubscreen" id="canvas3" style="visibility:hidden;"></br>
+
+            <strong class="incanvas">STEP</strong>
+
+            <span class="circlebg">&nbsp;3&nbsp;</span>
+
+            <p class="steptext">&nbsp;Click on the cubes to take them out of the curing tank.</p><br><br>
+
+
+
+
+
+            <!--Blinking arrowcuringnext  -->
+            <span class="blink_me" id="arrowcuringnext" style="position:absolute; font-size: 40px; left:730px; top:430px; visibility: ;"><strong><i class="fa fa-arrow-down"></i></strong></span>    
+
+            <img src="images/Next.png" style="position:absolute; left:730px; top:480px; cursor:pointer; visibility: ;" id="nextButton3" onClick="navNext3()" />
+
+                    
+
+            <!---img style="position:absolute; left:10px; top:480px; cursor:pointer;" id="backButton3" onClick="navBack3()" src="Back.png" /--->
+
+        </div>
+
+      
+
+    </div><!--- First Div---->
+    
+</td></tr>
+</table>
+
 </body>
+<!---i class="fa fa-arrow-right" style="color: #82C91E"></i>
+<i class="fa fa-arrow-left" style="color: #82C91E"></i>
+<i class="fa fa-arrow-down" style="color: #82C91E"></i>
+<i class="fa fa-arrow-up" style="color: #82C91E"></i>
+<i class="fa fa-chevron-circle-right" style="color: #82C91E"></i>
+<i class="fas fa-hand-point-right" style="color: #82C91E"></i--->
 </html>
+
+
