@@ -101,7 +101,7 @@
         },
 
         {
-            question: "2. What is the valve of wave speed "c"?", ///// Write the question inside double quotes
+            question: "2. What is the valve of wave speed 'c'?", ///// Write the question inside double quotes
             answers: {
                 a: "&nbsp;c = &#8730;A/&#961;T", ///// Write the option 1 inside double quotes
                 b: "&nbsp;c = &#8730;T/&#961;A", ///// Write the option 2 inside double quotes
