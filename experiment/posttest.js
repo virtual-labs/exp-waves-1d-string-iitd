@@ -112,7 +112,7 @@
         },
 
         {
-            question: "3. An experiment is preformed according to time "t", what are the values of "t"?", ///// Write the question inside double quotes
+            question: "3. An experiment is preformed according to time 't', what are the values of 't'?", ///// Write the question inside double quotes
             answers: {
                 a: "t = 0, 5, 8", ///// Write the option 1 inside double quotes
                 b: "t = 0, 6, 7", ///// Write the option 2 inside double quotes
