@@ -17,12 +17,12 @@ A string is a one-dimensional elastic continuum that does not transmit or resist
 Consider a string, stretched along the x-axis to a length l by a tension T, as shown in Figure 1. Arbitrary distributed forces are assumed to act over the length of the string. The transverse motion of any point on the string at the coordinate position x is represented by the field variable w(x,t) where t is the time. Consider the free body diagram of a small element of the string between two closely spaced points x and x +&#8710;x, as shown in Figure 2. Let the element have a mass &#8710;m(x), and a deformed length &#8710;s. The tensions at the two ends are T (x,t) and T (x+&#8710;x,t), respectively, and the external force densities (force per unit length) are p(x,t) in the transverse direction, and n(x,t) in the longitudinal direction, as shown in the figure 2. Neglecting the inertia force in the longitudinal direction of the string, we can write the force balance equation for the small element in the longitudinal direction as
 
 <img src="images/t1.png"><br>
-<img src="images/t2.png"><br>
-<img src="images/t3.png"><br>
+<img src="images/t2.png" style="height:280px;"><br>
+<img src="images/t3.png" style="height:370px;"><br>
 
 where &#8733;(x,t) represents the angle between the tangent to the string at x and the x-axis, as shown in Figure 2. Dividing both sides of (1.1) by &#8710;x and taking the limit &#8710;x &#8594;0 yields
 
-<img src="images/t4.png"><br>
+<img src="images/t4.png" style="height:87px;"><br>
 
 where [.]<sub>,x</sub> represents partial derivative with respect to x. From geometry, one can write
 
@@ -30,7 +30,7 @@ where [.]<sub>,x</sub> represents partial derivative with respect to x. From geo
 
 Substituting (1.3) in (1.2), and assuming w<sub>,x</sub> &#8810; 1, yields on simplification
 
-<img src="images/t6.png"><br>
+<img src="images/t6.png" style="height:67px;"><br>
 
 Therefore, when n(x,t) &#8801; 0, equation (1.4) implies that the tension T (x,t) is a constant. On the other hand, for a hanging string, shown in Figure 3, one has n(x,t) = &#961;A(x)g, where &#961; is the density, A is the area of cross-section, and g is the acceleration due to gravity. Then, using the boundary condition of zero tension at the free end, i.e., T (l,t) &#8801; 0 (for constant &#961;A), (1.4) yields T (x,t) = &#961;Ag (l - x). in general, the tension in a string may also depend on time. However, in the following discussions, it will be assumed to depend at most on x.
 
