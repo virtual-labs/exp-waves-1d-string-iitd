@@ -36,7 +36,6 @@ Therefore, when n(x,t) &#8801; 0, equation (1.4) implies that the tension T (x,t
 
 <img src="images/t7.png"><br>
 
-Figure 3. Schematic representation of a hanging string.
 Now, consider the transverse dynamics of the string element shown in Figure 1. The equation of motion of the small element in the transverse direction can be written from Newton’s second law of motion as
 
 <img src="images/t8.png"><br>
@@ -50,12 +49,13 @@ where, based on the previous considerations, we have assumed ds/dx  &#8776; 1. T
 <img src="images/t10.png" style="padding-left: 50px;"><br>
 
 where f(t)is the time-varying force, and  &#948;(.) represents the Dirac delta function.
+
 An important particular form of (1.6) is obtained for p(x,t)  &#8801; 0, and T and &#961;A not depending on x. We can rewrite (1.6) as
 
 <img src="images/t11.png" style="padding-left: 100px;"><br>
 
-where  c=&#8730;(T/&#961;A)  is a constant having the dimension of speed. This represents the unforced transverse dynamics of a uniformly tensioned string.<br> The hyperbolic partial differential equation (1.8) is known as the linear one-dimensional wave equation, and c is known as the wave speed. This implies that a disturbance created at any point on the string propagates with a speed c. It should be clear that the wave speed c is distinct from the transverse material velocity (i.e., the velocity of the particles of the string) which is given by w<sub>,t</sub> (x,t)<br><br>
-The complete solution of the second-order partial differential equation (1.6) (or (1.8)) requires specification of two boundary conditions, and two initial conditions. For example, for a taut string shown in Figure 1, the appropriate boundary conditions are w (0,t)  &#8801; 0 and w (l,t)  &#8801; 0.<br> For the case of a hanging string, the boundary conditions are w (0,t)  &#8801; 0 and w (l,t) is finite.<br> The initial conditions are usually specified in terms of the initial shape of the string, and initial velocity of the string, i.e., in the forms w(x,0) = w<sub>0</sub> (x),and w,t(x,0) = v<sub>0</sub> (x), respectively.<br>
+where  c=&#8730;(T/&#961;A)  is a constant having the dimension of speed. This represents the unforced transverse dynamics of a uniformly tensioned string. The hyperbolic partial differential equation (1.8) is known as the linear one-dimensional wave equation, and c is known as the wave speed. This implies that a disturbance created at any point on the string propagates with a speed c. It should be clear that the wave speed c is distinct from the transverse material velocity (i.e., the velocity of the particles of the string) which is given by w<sub>,t</sub> (x,t).<br>
+The complete solution of the second-order partial differential equation (1.6) (or (1.8)) requires specification of two boundary conditions, and two initial conditions. For example, for a taut string shown in Figure 1, the appropriate boundary conditions are w (0,t)  &#8801; 0 and w (l,t)  &#8801; 0. For the case of a hanging string, the boundary conditions are w (0,t)  &#8801; 0 and w (l,t) is finite. The initial conditions are usually specified in terms of the initial shape of the string, and initial velocity of the string, i.e., in the forms w(x,0) = w<sub>0</sub> (x),and w,t(x,0) = v<sub>0</sub> (x), respectively.<br>
 
 <a href="images/infinitecomplete.pdf" target="_blank">Infinite Complete</a>
 
