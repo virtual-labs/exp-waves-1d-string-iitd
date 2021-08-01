@@ -114,10 +114,10 @@
         {
             question: "3. The motion of the string can be represented by which of the following?", ///// Write the question inside double quotes
             answers: {
-                a: "&nbsp;w(x,t)=S sin (k&#960;cl/t) sin (k&#960;x/l)", ///// Write the option 1 inside double quotes
-                b: "&nbsp;w(x,t)=S sin (k&#960;ct/l) sin (k&#960;l/x)", ///// Write the option 2 inside double quotes
-                c: "&nbsp;w(x,t)=S sin (k&#960;ct/l) sin (k&#960;x/x)", ///// Write the option 1 inside double quotes
-                d: "&nbsp;w(x,t)=S sin (kctl/&#960;) sin (k&#960;x/l)", ///// Write the option 2 inside double quotes
+                a: "&nbsp;w(x,t) = S sin (k&#960;cl/t) sin (k&#960;x/l)", ///// Write the option 1 inside double quotes
+                b: "&nbsp;w(x,t) = S sin (k&#960;ct/l) sin (k&#960;l/x)", ///// Write the option 2 inside double quotes
+                c: "&nbsp;w(x,t) = S sin (k&#960;ct/l) sin (k&#960;x/l)", ///// Write the option 1 inside double quotes
+                d: "&nbsp;w(x,t) = S sin (kctl/&#960;) sin (k&#960;x/l)", ///// Write the option 2 inside double quotes
             },
             correctAnswer: "c" ///// Write the correct option inside double quotes
         },
