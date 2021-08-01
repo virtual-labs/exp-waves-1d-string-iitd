@@ -1,1 +1,1 @@
-## Transverse Vibration Waves in 1D String
+## Transverse vibration waves in 1D string
